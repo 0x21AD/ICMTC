@@ -9,10 +9,10 @@ Checking the source Code we have a Class Users with the attributes:
 
 ![Alt text](image-1.png)
 
--string -> username\
--string -> password\
--boolean -> isAdmin\
--string -> id\
+- string -> username\
+- string -> password\
+- boolean -> isAdmin\
+- string -> id\
 
 checking for the win condition we need to be admin, That's a simple deserlization attack , since we contrtol the deseralized data we can create an instance of the object in the runtime
 
