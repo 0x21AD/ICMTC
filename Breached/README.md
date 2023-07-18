@@ -17,8 +17,12 @@ Let's poke around the search functionality
 
 I like to leave smth running in the background while manually testing the page , so let's fire up sqlmap on the captured request.
 
-you can always copy the 
+you can always copy the request as shown below and supply it directly to SQLmap
+
+![Alt text](image-1.png)
+
+
+And we get a hit it's injectable , let's try to extract the database 
 
 ![Alt text](image-2.png)
 
-![Alt text](image-1.png)
