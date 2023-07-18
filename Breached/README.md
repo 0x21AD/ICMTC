@@ -22,7 +22,23 @@ you can always copy the request as shown below and supply it directly to SQLmap
 ![Alt text](image-1.png)
 
 
-And we get a hit it's injectable , let's try to extract the database 
+And we get a hit it's injectable. 
 
 ![Alt text](image-2.png)
 
+Trying to use SQLmap to extract the database failed as the connection overwhelmed the server, Simply trying basic payload 
+```
+‘) or 1=1 — -
+```
+Or you could use the Poc payload given by sqlmap
+
+
+![Alt text](image-3.png)
+
+I believe the challenge behaviour was un-intended, we were suppossed to manually extract the flag from the database and bypass a some filteration , Here's my explanation to what is happening in the backend:
+
+- The search functionality searches the notes across the application
+
+- We can assume that the backend query with something like ``` Select cloumn from table_name where column LIKE {our input}  ```
+
+- The fact that the flag is in the current table and is the first entry in the table made this un-intended solution possible , I believe the creators should have added atleast one entry ( one extra note ) then added the flag note.
