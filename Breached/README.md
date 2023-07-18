@@ -32,8 +32,8 @@ Trying to use SQLmap to extract the database failed as the connection overwhelme
 ```
 Or you could use the Poc payload given by sqlmap
 
-
-![Alt text](image-3.png)
+(Screen shot taken from other write-up as the challenge is currently down.) 
+![Alt text](image-3.png) 
 
 I believe the challenge behaviour was un-intended, we were suppossed to manually extract the flag from the database and bypass a some filteration , Here's my explanation to what is happening in the backend:
 
