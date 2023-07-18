@@ -19,6 +19,7 @@ checking for the win condition we need to be admin, That's a simple deserlizatio
 
 Using the original code to create an instance of the class user with Useranme = 0x21AD and password = password cuz we have those two variables 
 
+```
 <?php
 
 class Users
@@ -65,7 +66,7 @@ $user = serialize(new Users("0x21AD" , "yuri"));
 echo $user;
 
 ?>
-
+```
 and we get our payload  :
 ![Alt text](image-2.png)
 
