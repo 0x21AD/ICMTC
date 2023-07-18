@@ -70,12 +70,12 @@ echo $user;
 and we get our payload  :
 ![Alt text](image-2.png)
 
-# But we have a prefix `Users` appended to all the attributes values.
+#### But we have a prefix `Users` appended to all the attributes values.
 All we need to do is to either manually modify the payload or use chatgpt (lazy way)!
 
-and we get our final working payload, just modify the boolean value of isAdminto be 1 which means True:
+Just modify the boolean value of isAdminto be 1 which means True and we get our final working payload:
 
-O:5:"Users":4:{s:8:"username";s:6:"0x21AD";s:8:"password";s:4:"yuri";s:7:"isAdmin";b:1;s:2:"id";s:0:"";}
+`O:5:"Users":4:{s:8:"username";s:6:"0x21AD";s:8:"password";s:4:"yuri";s:7:"isAdmin";b:1;s:2:"id";s:0:"";}`
 
 
 ![Alt text](image-3.png)
